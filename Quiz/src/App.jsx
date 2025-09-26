@@ -26,7 +26,8 @@ const App = () => {
       <h1 className='text-4xl font-bold text-purple-600 mb-2'>React Quiz App</h1>
       <p className='text-gray-400'>Test Your Knowledge</p>
     </div>
-    <QuestionCards data={questions[currentQuestion]}/>
+    <p>Score: {score}</p>
+    <QuestionCards onAnswer={handleAnswer} data={questions[currentQuestion]}/>
     </div>
   );
 }
